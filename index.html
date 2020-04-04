@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilbert Subay Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/10bd8af26a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,500;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container1">
+            <div id="logo">
+                <p>Gilbert Subay</p>
+            </div>
+            <div id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <div class="intro-container">
+                <div class="img-fluid">
+                    <img src="/img/avataaars.svg" alt="">
+                </div>
+                <div class="section-title"></div>
+            </div>
+            <div class="section-intro">
+                <h2>Hello My Name is <br><span>Gilbert Subay</span></h2>
+
+            </div>
+        </div>
+    </section>
+    <section id="homepage">
+        <div class="container">
+            <div class="section-title">
+                <h1>Hobbies</h1>
+            </div>
+            <div class="img-container row">
+                <div class="img-homepage col-md-6 col-lg-4">
+                    <img src="img/basketball.png" alt="">
+                </div>
+                <div class="img-homepage col-md-6 col-lg-4">
+                    <img src="img/football.jpg" alt="">
+                </div>
+                <div class="img-homepage col-md-6 col-lg-4">
+                    <img src="img/game.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h1>About</h1>
+            </div>
+            <div class="paragraph-about-me">
+                <div class="paragraph-left">
+                    <p>My name is Gilbert Subay. I am Fresh Graduate from Kwik Kian Gie School of Business major in Marketing Management Bachelor Degree.</p>
+                </div>
+                <div class="paragraph-right">
+                    <p>Why i did choose to do manuver toward technology thing like code instead follow the career that fit with my bachelor degeree? BECAUSE I LOVE TECHNOLOGY</p>
+                </div>
+                <div class="call-to-action">
+                    <a href="https://serene-perlman-a77fd0.netlify.com/">My CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="contact-us-class col-md-12 wow animated fadeInRight" data-wow-delay=".2s">
+            <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                <!-- Name -->
+                <div class="form-group label-floating">
+                    <input class="input-control" id="name" type="text" name="text" required data-error="Please enter your Name" placeholder="your name">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <!-- email -->
+                <div class="form-group label-floating">
+                    <input class="input-control" id="email" type="email" name="email" required data-error="Please enter your Email" placeholder="your email">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <!-- Subject -->
+                <div class="form-group label-floating">
+
+                    <input class="input-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject" placeholder="your subject">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <!-- Message -->
+                <div class="form-group label-floating">
+
+                    <textarea class="input-control" rows="3" id="message" name="message" required data-error="Write your message" placeholder="your message"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <!-- Form Submit -->
+                <div class="form-submit mt-5">
+                    <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <script>
+        (function() {
+            var header = document.getElementById("header");
+            var navToggle = document.getElementById("nav-toggle");
+
+            navToggle.addEventListener("click", function() {
+                toggleClass(header, "open")
+            })
+
+            function toggleClass(element, className) {
+                var classList = element.className.split(" ");
+                if (classList.indexOf(className) === -1) {
+                    addClass(element, className);
+                } else {
+                    removeClass(element, className);
+                }
+            }
+        })();
+
+    </script>
+
+    <!--
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>

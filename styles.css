@@ -1,0 +1,282 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IBM Plex Serif', serif;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+/*Menu Header*/
+#navigation li{
+    list-style: none;
+}
+#navigation li a{
+    text-decoration:none;
+    color: white;
+   
+}
+
+#header{
+    background-color: #005b96;
+    color: white;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+
+}
+.container1{
+    position: relative;
+}
+#header a{
+    display: inline-block;
+    padding: 15px;
+}
+
+#navigation a{
+    display: block;
+    opacity: 0.8
+}
+#navigation a:hover{
+    opacity: 1;
+}
+#logo{
+    display: inline-block;
+    width: 60%
+    padding: 15px;
+    padding-left: 15px;
+    font-size: 1.7rem;
+}
+#navigation{
+    width: 300px;
+    position: absolute;
+    background-color: #005b96;
+    transform: translateX(-300px);
+    transition: transform 0.4s;
+}
+header.open #navigation{
+    transform: translateX(0px);    
+}
+header.open #navigation{
+    background-color: rgba(255,255,255,0.2);
+}
+#nav-toggle{
+    display: inline-block;
+    width: 50%;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 20px;
+    text-align: right;
+    margin-left: 30px;
+}
+#nav-toggle i{
+  background-color: rgba(0,0,0,.1);
+    padding: 20px;
+    margin-left: 60px
+}
+
+/*Menu Header end*/
+
+/*Intro-section*/
+#intro{
+text-align: center;
+padding: 40px;
+background-color: #00bcd4;
+color: white;
+    margin-top: 90px
+}
+#intro h2{
+    font-size: 2.2rem;
+}
+#intro h2 span{
+    color: #ff5722;
+}
+
+.section-intro{
+    padding-top: 20px;
+    width: 79.89%;
+    margin: auto
+}
+/*Intro-section-end*/
+
+/*Homepage*/
+#homepage{
+    text-align: center;
+    padding-top: 20px;
+    background-color: #b2ebf2;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.section-title h1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.img-homepage{
+    margin: 30px;
+}
+/*homepage end*/
+
+/*About-section*/
+#about{
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ff5722;
+    color: #ffff;
+}
+.container{
+    align-items: center;
+}
+.paragraph-about-me p{
+    font-size: 1.5rem
+}
+.call-to-action{
+    padding: 30px;
+    border: 3px solid #fff;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.call-to-action a{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffff;
+}
+/*About-section-end*/
+
+/*contact-us*/
+#contact-us{
+    color: white;
+    background-color: #dd2c00;
+    padding-top:  50px;
+    padding-bottom: 30px;
+}
+input, textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+   padding: 10px;
+    margin-left: 20px;
+}
+.contact-us-class .form-group input,.contact-us-class .form-group textarea,.contact-us-class .form-group button{
+    margin: auto;
+    width: 100%
+}
+
+.form-submit{
+     border: 2px solid #fff;
+    width: 100%;
+    padding-right:20px;
+    text-align: center;
+}
+button{
+     background-color: transparent;
+    color: #fff;
+   
+}
+.form-div{
+    margin: auto;
+}
+/*contact-us-end*/
+@media only screen and (max-width: 452px){
+#nav-toggle i{
+    margin-left: 0px;
+    }
+    #nav-toggle{
+        width: 35%
+    }
+    
+}
+
+@media only screen and (min-width: 750px){
+    #intro{
+        margin-top: 150px;
+    }
+    #header #logo p{
+        padding: 15px;
+    }
+    #nav-toggle{
+        width: 60%;
+        margin-left: 50px;
+    }
+    .img-homepage{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .form-group{
+        margin: auto;
+        width: 600px;
+    }
+    .form-submit{
+        margin: auto;
+        width: 600px;
+    }
+  #navigation{
+    background-color: #005b96;
+    transform: translateX(0px);
+      width: 100%;
+      display: flex;
+ }
+    #navigation li{
+        display: inline-block;
+    }
+      #nav-toggle{
+        display: none;
+    }
+ 
+    #navigation a{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1000px){
+    #intro{
+        margin-top: 80px
+    }
+    #nav-toggle{
+        display: none;
+    }
+    #logo p{
+        padding: 15px;
+    }
+    #header #logo{
+        display: inline-block;
+        width: auto;
+        margin-right: 
+    }
+    #header #navigation{
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 500px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
